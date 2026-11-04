@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Same palette as the current site: black, fuchsia accent, cyan + terminal green */
+  --color-accent: #e879f9;
+  --color-signal: #22d3ee;
+  --color-term: #22c55e;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: #000;
+  overflow-x: hidden;
+}
+
+.blink {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
